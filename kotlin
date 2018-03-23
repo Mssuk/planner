@@ -1,0 +1,10 @@
+System Services
+Example: System service on code
+
+Java
+AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
+NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
+
+Kotlin
+val alarmManager = context.alarmManager()
+val notificationManager = context.notificationManager()
