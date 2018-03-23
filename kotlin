@@ -8,3 +8,6 @@ NotificationManager notificationManager = (NotificationManager) context.getSyste
 Kotlin
 val alarmManager = context.alarmManager()
 val notificationManager = context.notificationManager()
+
+Android getSystemService() 메소드->
+http://promobile.tistory.com/169 참고
