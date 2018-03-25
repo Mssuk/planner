@@ -1,6 +1,6 @@
+```
 System Services
 Example: System service on code
-
 Java
 AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
 NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
@@ -8,7 +8,14 @@ NotificationManager notificationManager = (NotificationManager) context.getSyste
 Kotlin
 val alarmManager = context.alarmManager()
 val notificationManager = context.notificationManager()
+```
 
+```
 Android getSystemService() 메소드->
 http://promobile.tistory.com/169 참고
 https://android-arsenal.com/details/1/1634 참고
+```
+
+```
+https://github.com/yongjhih/kotlin-system-services
+```
