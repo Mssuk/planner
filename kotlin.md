@@ -1,11 +1,12 @@
+
 ```
 System Services
 Example: System service on code
-Java
+##Java
 AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
 NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
 
-Kotlin
+##Kotlin
 val alarmManager = context.alarmManager()
 val notificationManager = context.notificationManager()
 ```
