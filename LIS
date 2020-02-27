@@ -1,0 +1,44 @@
+
+
+lis =[]
+trace = [0]* 12
+
+def findLIS(n):
+    for i in range(n):
+        # 만나는 수가 현재 배열에 저장된 마지막 수보다 클 때
+        if i == 0 or arr[i] > lis[-1]:
+            trace[arr[i]] = len(lis)
+            lis.append(arr[i])
+        else : # 만나는 수가 현재 배열에 저장된 마지막 수보다 작을 때 (연속적인 증가 수열이 끝남) 
+            start = 0
+            end = len(lis)
+            idx = end
+            while start< end : #start<end 일때 binary search 종료
+                print("start, end", start, ", ", end)
+                mid = (start+end)//2
+                print("mid", mid, " lis[mid]", lis[mid], " arr[i]", arr[i])
+                if lis[mid] >= arr[i]:
+                    idx = min(idx, mid)
+                    end = mid
+                else :
+                    start = mid + 1
+            lis[idx] = arr[i]
+         #   trace[arr[i]] = idx
+            print()
+            print(lis)
+            print()
+    cur = len(lis)-1
+  #  for i in range(n-1, -1, -1):
+  #      if trace[arr[i]] == cur:
+  #          lis[cur] = arr[i]
+  #          cur-=1
+    return len(lis)
+
+
+print(findLIS(n))
+print(trace)
+
+                    
+            
+            
+            
